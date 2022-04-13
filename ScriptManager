@@ -7504,9 +7504,25 @@ end
     local ST = PetSimX:Channel("Shiny Tools")
     ST:Button("Execute Script", function()
        DiscordLib:Notification("Script Executed", "Script has executed with success", "Close")
-       
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/XLinestX/ShinyToolV2/main/Login.lua"))()
     end)
     ST:Label("Made by sharmasrijan#7005 & Linest#9286")
     ST:Label("Working Executors:")
     ST:Label("- Krnl")
     ST:Label("- Synapse")
+
+
+
+
+
+
+	local BF = Main:Server("BloxFruit", "")
+	local Bfs = BF:Channel("MUROKO")
+    Bfs:Button("Execute Script", function()
+       DiscordLib:Notification("Script Executed", "Script has executed with success", "Close")
+       loadstring(game:HttpGet('https://raw.githubusercontent.com/SHAREHACK/script/main/renhuball'))()
+    end)
+    Bfs:Label("UNKNOWN")
+    Bfs:Label("Working Executors:")
+    Bfs:Label("- Krnl")
+    Bfs:Label("- Synapse")
