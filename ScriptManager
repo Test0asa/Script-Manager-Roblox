@@ -3,7 +3,7 @@
 local DiscordLib = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/discord%20lib.txt")() -- Library
 
 -- GUI -- 
-local Main = DiscordLib:Window("Script Manager")-- Windows :>> 
+local Main = DiscordLib:Window("Script Manager -- Current Version : 0.2")-- Windows :>> 
 local ServW = Main:Server("Welcome", "")
 local Welcome = ServW:Channel("Welcome!")
 local Ver = ServW:Channel("Update Logs")
@@ -33,6 +33,7 @@ Welcome:Button("Click this <3", function()
 
 
 
+
     Ver:Label("( Ver 0.2 ): - Beta")
     Ver:Label("( Ver 0.1 ): - Release!")
 
@@ -43,6 +44,7 @@ Welcome:Button("Click this <3", function()
     Games:Label(" - DemonFall")
     Games:Label(" - BloxFruits")
     Games:Label(" - UntitledHood")
+	Games:Label(" - BeeSwarmSim")
     Games:Label(" - Soon more...")
 
     Welcome:Label("Make Sure you have the current version for the best quality")
@@ -51,6 +53,11 @@ Welcome:Button("Click this <3", function()
     Welcome:Label("Soon Discord server.....")
 
 
+
+
+	Welcome:Textbox("Feel free to say anything", "You can type here:?", true, function(t)
+		print(t)
+	end)
 -- Da hood
 
 
@@ -7861,3 +7868,33 @@ end
     Uh:Label("- Synapse")
 
 	
+
+local AR = Main:Server("Arsenal", "")
+local Arsenal = AR:Channel("BoltsHubV5")
+
+Arsenal:Button("Execute Script", function()
+DiscordLib:Notification("Script Executed", "Script has executed with success", "Close")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/fusiongreg/BoltsHubV5/main/Main",true))()
+    end)
+    Arsenal:Label("discord.gg/CQz5CQKv89")
+    Arsenal:Label("Script made by: Bolts 3#7289 ")
+    Arsenal:Label("Working Executors:")
+    Arsenal:Label("- Krnl")
+	Arsenal:Label("- Synapse")
+
+
+
+local Bee = Main:Server("BeeSwarm", "")
+local Bees = Bee:Channel("BeeSwarm Script")
+
+Bees:Button("Execute Script", function()
+DiscordLib:Notification("Script Executed", "Script has executed with success", "Close")
+shared.autoload = false -- change to profile name if you want to autoload (afking/autojoin). eg. shared.autoload = "profile"
+loadstring(game:GetObjects("rbxassetid://4384103988")[0X1].Source)("Pepsi Swarm")
+    end)
+
+
+    Bees:Label("Script made by: PalestineArab")
+	Bees :Label("Working Executors:")
+	Bees :Label("- Krnl")
+    Bees:Label("- Synapse")
