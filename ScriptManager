@@ -7,14 +7,33 @@ local Main = DiscordLib:Window("Script Manager")-- Windows :>>
 local ServW = Main:Server("Welcome", "")
 local Welcome = ServW:Channel("Welcome!")
 local Ver = ServW:Channel("Update Logs")
-local Games = ServW:Channel("Games supported")
+local Games = ServW:Channel("Games :>")
+local Extra = ServW:Channel("Extra stuff")
+
 
 -- Inside GUI Stuff -- 
 Welcome:Button("Click this <3", function()
     DiscordLib:Notification("Thanks for using the script", "Hello and thx for using the script!", "Luv <3 you !!!")
     end)
 
-    Ver:Label("( Ver 0.2 ): - Beta")
+
+	
+	Extra:Button("AntiAfk", function()
+			DiscordLib:Notification("Anti AFK", "Anti AFK has been enabled", "Close")
+			local vu = game:GetService("VirtualUser")
+			game:GetService("Players").LocalPlayer.Idled:connect(function()
+			vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+			wait(10)
+			vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+			end)
+		end)
+
+
+
+
+
+
+   
     Ver:Label("( Ver 0.1 ): - Release!")
 
     Games:Label(" - Dahood")
@@ -22,10 +41,14 @@ Welcome:Button("Click this <3", function()
     Games:Label(" - CounterBlox")
     Games:Label(" - DungeonQuest")
     Games:Label(" - DemonFall")
+    Games:Label(" - BloxFruits")
+    Games:Label(" - UntitledHood")
+    Games:Label(" - Soon more...")
 
     Welcome:Label("Make Sure you have the current version for the best quality")
     Welcome:Label("Also,reach me if you find any bugs")
     Welcome:Label("Discord: Testoasa#6112")
+    Welcome:Label("Soon Discord server.....")
 
 
 -- Da hood
@@ -49,7 +72,7 @@ loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/PolarWasHere/Arc
 
 
 
-	local AK = DaHood:Channel("Arctic")
+	local AK = DaHood:Channel("AimLock")
 
 	AK:Button("Execute Script", function()
 		DiscordLib:Notification("Script Executed", "Script has executed with success", "Close")
@@ -7827,8 +7850,8 @@ end
 
 
 	local unth = Main:Server("UntitledHood", "")
-	local Uh = BF:Channel("Untitled hood cash")
-    Bfs:Button("Execute Script", function()
+	local Uh = unth:Channel("Untitled hood cash")
+    Uh:Button("Execute Script", function()
        DiscordLib:Notification("Script Executed", "Script has executed with success", "Close")
 	   loadstring(game:HttpGet("https://raw.githubusercontent.com/xlostpexz/Untitled-Hood-Free/main/Untitled%20Hood%20Free"))()
     end)
