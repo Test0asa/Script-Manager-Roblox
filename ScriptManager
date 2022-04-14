@@ -33,7 +33,7 @@ Welcome:Button("Click this <3", function()
 
 
 
-   
+    Ver:Label("( Ver 0.2 ): - Beta")
     Ver:Label("( Ver 0.1 ): - Release!")
 
     Games:Label(" - Dahood")
