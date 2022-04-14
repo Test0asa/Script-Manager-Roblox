@@ -14,7 +14,7 @@ Welcome:Button("Click this <3", function()
     DiscordLib:Notification("Thanks for using the script", "Hello and thx for using the script!", "Luv <3 you !!!")
     end)
 
-   
+    Ver:Label("( Ver 0.2 ): - Beta")
     Ver:Label("( Ver 0.1 ): - Release!")
 
     Games:Label(" - Dahood")
