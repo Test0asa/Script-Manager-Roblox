@@ -26,8 +26,7 @@ DiscordLib:Notification("Script Executed", "Script has executed with success", "
 
     M03s:Label("Join his discord: https://discord.gg/urs2cRBHXU")
     M03s:Label("Script made by: 03.s#6260 ")
-    M03s:Label("Working Executors: All")
-
+    
 
 	M03s:Label("This is a multigame script")
 	M03s:Label("Supported games:")
@@ -129,9 +128,7 @@ loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/PolarWasHere/Arc
 
     Arctic:Label("Make sure to join their Roblox group!")
     Arctic:Label("Script made by: $mokeGoodMids#0001")
-    Arctic:Label("Working Executors:")
-    Arctic:Label("- Krnl")
-    Arctic:Label("- Synapse")
+
 
 
 
@@ -7850,8 +7847,7 @@ end
 
  end)
    Stormy:Label("Made by UNKNOWN")
-    Stormy:Label("Working Executors:")
-    Stormy:Label("- Krnl")
+
 
     local DemonFall = Main:Server("DemonFall", "")
     local Dms = DemonFall:Channel("DemonFall")
@@ -7860,9 +7856,7 @@ end
        loadstring(game:HttpGet("https://raw.githubusercontent.com/LeadMarker/OpenSource/main/Demonfall.lua"))()
     end)
     Dms:Label("Made by UNKNOWN")
-    Dms:Label("Working Executors:")
-    Dms:Label("- Krnl")
-    Dms:Label("- Synapse")
+
 
 
 
@@ -7873,9 +7867,7 @@ end
        loadstring(game:HttpGet("https://raw.githubusercontent.com/TurfuGoldy/GoldenScripts/main/EzPets.lua"))()
     end)
     EzPets:Label("Made by Goldy")
-    EzPets:Label("Working Executors:")
-    EzPets:Label("- Krnl")
-    EzPets:Label("- Synapse")
+
 
 
 
@@ -7887,9 +7879,6 @@ end
        loadstring(game:HttpGet("https://raw.githubusercontent.com/XLinestX/ShinyToolV2/main/Login.lua"))()
     end)
     ST:Label("Made by sharmasrijan#7005 & Linest#9286")
-    ST:Label("Working Executors:")
-    ST:Label("- Krnl")
-    ST:Label("- Synapse")
 
 
 
@@ -7903,9 +7892,7 @@ end
        loadstring(game:HttpGet('https://raw.githubusercontent.com/SHAREHACK/script/main/renhuball'))()
     end)
     Bfs:Label("UNKNOWN")
-    Bfs:Label("Working Executors:")
-    Bfs:Label("- Krnl")
-    Bfs:Label("- Synapse")
+
 
 
 
@@ -7920,9 +7907,7 @@ end
 	   loadstring(game:HttpGet("https://raw.githubusercontent.com/xlostpexz/Untitled-Hood-Free/main/Untitled%20Hood%20Free"))()
     end)
     Uh:Label("UNKNOWN")
-    Uh:Label("Working Executors:")
-    Uh:Label("- Krnl")
-    Uh:Label("- Synapse")
+
 
 	
 
@@ -7935,9 +7920,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/fusiongreg/BoltsHubV5
     end)
     Arsenal:Label("discord.gg/CQz5CQKv89")
     Arsenal:Label("Script made by: Bolts 3#7289 ")
-    Arsenal:Label("Working Executors:")
-    Arsenal:Label("- Krnl")
-	Arsenal:Label("- Synapse")
+
 
 
 
@@ -7952,6 +7935,3 @@ loadstring(game:GetObjects("rbxassetid://4384103988")[0X1].Source)("Pepsi Swarm"
 
 
     Bees:Label("Script made by: PalestineArab")
-	Bees :Label("Working Executors:")
-	Bees :Label("- Krnl")
-    Bees:Label("- Synapse")
