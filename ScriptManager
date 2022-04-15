@@ -1,5 +1,13 @@
 -- Roblox Script Manager
 
+
+
+
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/03koios/LoadingUiTest/main/LoadingUiTest"))()
+
+
+
 local DiscordLib = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/discord%20lib.txt")() -- Library
 
 -- GUI -- 
@@ -11,7 +19,7 @@ local Games = ServW:Channel("Games :>")
 local Extra = ServW:Channel("Extra stuff")
 
 
-
+    
 
 local MultiScripts = Main:Server("MultiScripts", "")
 
@@ -24,10 +32,11 @@ DiscordLib:Notification("Script Executed", "Script has executed with success", "
  loadstring(game:HttpGet("https://pastebin.com/raw/7hgJWL9R"))()
     end)
 
-    M03s:Label("Join his discord: https://discord.gg/urs2cRBHXU")
-    M03s:Label("Script made by: 03.s#6260 ")
-    
+	M03s:Button("Copy Discord", function()
+		setclipboard("https://discord.gg/urs2cRBHXU")("Clicked")  
+	end)
 
+    M03s:Label("Script made by: 03.s#6260 ")
 	M03s:Label("This is a multigame script")
 	M03s:Label("Supported games:")
 	M03s:Label("[+] Online Business Simulator 2")
@@ -51,7 +60,6 @@ DiscordLib:Notification("Script Executed", "Script has executed with success", "
 	M03s:Label("[+] Destruction Simulator")
 	M03s:Label("[+] Power Simulator 2")
 	M03s:Label("[+] Mall Tycoon")
-
 	M03s:Label("Enjoy The Script!!!")
 
 
@@ -72,6 +80,9 @@ Welcome:Button("Click this <3", function()
     DiscordLib:Notification("Thanks for using the script", "Hello and thx for using the script!", "Luv <3 you !!!")
     end)
 
+ Welcome:Button("Copy Discord", function()
+		setclipboard("https://discord.gg/67VvUQPMmc")("Clicked")  
+	end)
 
 	
 	Extra:Button("AntiAfk", function()
@@ -106,7 +117,7 @@ Welcome:Button("Click this <3", function()
     Welcome:Label("Make Sure you have the current version for the best quality")
     Welcome:Label("Also,reach me if you find any bugs")
     Welcome:Label("Discord: Testoasa#6112")
-    Welcome:Label("Soon Discord server.....")
+    
 
 
 
@@ -129,16 +140,19 @@ loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/PolarWasHere/Arc
     Arctic:Label("Make sure to join their Roblox group!")
     Arctic:Label("Script made by: $mokeGoodMids#0001")
 
-
+	Arctic:Label("------------------------------------------------------")
+	Arctic:Label("This script is a utility mod for DaHood.")
+	Arctic:Label("It has many features and its one of the best.")
 
 
 
 	local AK = DaHood:Channel("AimLock")
 
+
+
 	AK:Button("Execute Script", function()
 		DiscordLib:Notification("Script Executed", "Script has executed with success", "Close")
 		
-			
 	local Settings = {
 		rewrittenmain = {
 			Enabled = true,
@@ -430,10 +444,9 @@ loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/PolarWasHere/Arc
 	end)
 
     AK:Label("Script made by Unknown")
-    AK:Label("Working Executors:")
-    AK:Label("- Krnl")
-    AK:Label("- Synapse")
-
+	AK:Label("--------------------------------------------------------")
+	AK:Label("Simple Aimlock tool")
+	AK:Label("Activation key: Q")
 
 -- DungeonQuest
 local Dq = Main:Server("DungeonQuest", "")
@@ -596,10 +609,10 @@ end)
     Dqs:Label("Script GUI made by me <3")
     Dqs:Label("Use it wisely because im not sure if its safe!!!")
     Dqs:Label("Read the Info before you use it")
-    Dqs:Label("Working Executors:")
-    Dqs:Label("- Krnl")
-    Dqs:Label("- Synapse")
 
+	Dqs:Label("--------------------------------------------------------")
+	Dqs:Label("Simple kill all tool for dungeonquest")
+	
 
 -- CBRO
  local cbro = Main:Server("CBRO", "")
@@ -609,10 +622,9 @@ end)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ion..."))()
  end)
    Hexagon:Label("Made by ion#3820")
-    Hexagon:Label("Working Executors:")
-    Hexagon:Label("- Krnl")
-    Hexagon:Label("- Synapse")
 
+   Hexagon:Label("-------------------------------------------------------")
+   Hexagon:Label("Legit cheat for CBRO")
 
     
 
@@ -7847,7 +7859,8 @@ end
 
  end)
    Stormy:Label("Made by UNKNOWN")
-
+   Stormy:Label("---------------------------------------------------------")
+   Stormy:Label("Rage Cheat for CBRO")
 
     local DemonFall = Main:Server("DemonFall", "")
     local Dms = DemonFall:Channel("DemonFall")
@@ -7856,7 +7869,8 @@ end
        loadstring(game:HttpGet("https://raw.githubusercontent.com/LeadMarker/OpenSource/main/Demonfall.lua"))()
     end)
     Dms:Label("Made by UNKNOWN")
-
+	Dms:Label("----------------------------------------------------------------")
+	Dms:Label("Simple script for farming and teleporting")
 
 
 
@@ -7873,14 +7887,17 @@ end
 
 
 
-    local ST = PetSimX:Channel("Shiny Tools")
+    local ST = MultiScripts:Channel("Shiny Tools")
     ST:Button("Execute Script", function()
        DiscordLib:Notification("Script Executed", "Script has executed with success", "Close")
        loadstring(game:HttpGet("https://raw.githubusercontent.com/XLinestX/ShinyToolV2/main/Login.lua"))()
     end)
     ST:Label("Made by sharmasrijan#7005 & Linest#9286")
-
-
+	ST:Label("[+] Pet Simulator X")
+	ST:Label("[+] Clicker Simulator")
+	ST:Label("[+] Pet Legacy")
+	ST:Label("[+] Magnet Simulator 2")
+	ST:Label("[+] Donate me pls")
 
 
 
@@ -7891,9 +7908,9 @@ end
        DiscordLib:Notification("Script Executed", "Script has executed with success", "Close")
        loadstring(game:HttpGet('https://raw.githubusercontent.com/SHAREHACK/script/main/renhuball'))()
     end)
-    Bfs:Label("UNKNOWN")
-
-
+    Bfs:Label("Made by UNKNOWN")
+	Bfs:Label("-------------------------------------------------------------------------")
+	Bfs:Label("Farming script. Also one of the best")
 
 
 
@@ -7906,9 +7923,9 @@ end
        DiscordLib:Notification("Script Executed", "Script has executed with success", "Close")
 	   loadstring(game:HttpGet("https://raw.githubusercontent.com/xlostpexz/Untitled-Hood-Free/main/Untitled%20Hood%20Free"))()
     end)
-    Uh:Label("UNKNOWN")
-
-
+    Uh:Label("Made by UNKNOWN")
+	Uh:Label("----------------------------------------------------------------------------")
+	Uh:Label("999t Money Script")
 	
 
 local AR = Main:Server("Arsenal", "")
@@ -7918,8 +7935,18 @@ Arsenal:Button("Execute Script", function()
 DiscordLib:Notification("Script Executed", "Script has executed with success", "Close")
 loadstring(game:HttpGet("https://raw.githubusercontent.com/fusiongreg/BoltsHubV5/main/Main",true))()
     end)
-    Arsenal:Label("discord.gg/CQz5CQKv89")
+
+	Arsenal:Button("Copy Discord", function()
+		setclipboard("discord.gg/CQz5CQKv89")("Clicked")  
+	end)
+
+
+
     Arsenal:Label("Script made by: Bolts 3#7289 ")
+	Arsenal:Label("-------------------------------------------------------------------------")
+	Arsenal:Label("Arsenal script. Aimbot and Wall ")
+
+
 
 
 
@@ -7935,3 +7962,5 @@ loadstring(game:GetObjects("rbxassetid://4384103988")[0X1].Source)("Pepsi Swarm"
 
 
     Bees:Label("Script made by: PalestineArab")
+	Bees:Label("--------------------------------------------------------------------------------")
+	Bees:Label("Complex farming tool.It has all needs")
