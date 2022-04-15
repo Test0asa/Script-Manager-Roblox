@@ -122,6 +122,27 @@ Welcome:Button("Click this <3", function()
 
 
 
+		Extra:Button("Chat Logger", function()
+			DiscordLib:Notification("Chat Logger", "Enjoy Spying on others", "Close")
+			loadstring(game:HttpGet("https://pastebin.com/raw/stggPUBM", true))()
+		end)
+		Extra:Label("Credits: V3rtices")
+
+
+		Extra:Button("Infinite Yeld", function()
+			DiscordLib:Notification("Infinite Yeld", "Become the most powerfull ADMIN", "Close")
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+		end)
+
+		
+
+
+
+
+
+
+
+
 
 
 
@@ -179,7 +200,6 @@ loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/PolarWasHere/Arc
 
 	AK:Button("Execute Script", function()
 		DiscordLib:Notification("Script Executed", "Script has executed with success", "Close")
-		
 	local Settings = {
 		rewrittenmain = {
 			Enabled = true,
