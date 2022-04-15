@@ -3,8 +3,7 @@
 
 
 
--- loadingScreen
-loadstring(game:HttpGet("https://raw.githubusercontent.com/03koios/LoadingUiTest/main/LoadingUiTest"))()
+
 
 
 
@@ -17,7 +16,7 @@ local Welcome = ServW:Channel("Welcome!")
 local Ver = ServW:Channel("Update Logs")
 local Games = ServW:Channel("Games :>")
 local Extra = ServW:Channel("Extra stuff")
-
+local Executors = ServW:Channel("Executors")
 
     
 
@@ -62,11 +61,37 @@ DiscordLib:Notification("Script Executed", "Script has executed with success", "
 	M03s:Label("[+] Mall Tycoon")
 	M03s:Label("Enjoy The Script!!!")
 
+	Executors:Label("Free Executors")
+---
+Executors:Button("Krnl.ca", function()
+	DiscordLib:Notification("Copied", "The site link was successfully copied", "Done!")
+	setclipboard("https://krnl.ca/")("Clicked")  
+end)
+---
+Executors:Button("JJSploit", function()
+	DiscordLib:Notification("Copied", "The site link was successfully copied", "Done")
+	setclipboard("https://wearedevs.net/d/JJSploit")("Clicked")  
+end)
+---
+
+
+Executors:Label("Paid Executors")
+Executors:Label("Price List:")
+Executors:Label("- SynapseX = 20$/19 Euro")
+Executors:Label("- ScriptWare = 20$/19 Euro")
 
 
 
-
-
+Executors:Button("SynapseX", function()
+	DiscordLib:Notification("Copied", "The site link was successfully copied", "Done!")
+	setclipboard("https://x.synapse.to/")("Clicked")  
+end)
+---
+Executors:Button("ScriptWare", function()
+	DiscordLib:Notification("Copied", "The site link was successfully copied", "Done")
+	setclipboard("https://script-ware.com/")("Clicked")  
+end)
+---
 
 
 
@@ -113,6 +138,7 @@ Welcome:Button("Click this <3", function()
     Games:Label(" - UntitledHood")
 	Games:Label(" - BeeSwarmSim")
 	Games:Label(" - Arsenal")
+	Games:Label(" - Phantom Forces")
     Games:Label(" - Soon more...")
 
     Welcome:Label("Make Sure you have the current version for the best quality")
