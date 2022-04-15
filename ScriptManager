@@ -11,6 +11,65 @@ local Games = ServW:Channel("Games :>")
 local Extra = ServW:Channel("Extra stuff")
 
 
+
+
+local MultiScripts = Main:Server("MultiScripts", "")
+local Multi = MultiScripts:Channel("MultiScripts")
+
+
+
+
+
+local M03s = Multi:Channel("03.s")
+Multi:Button("Execute Script", function()
+DiscordLib:Notification("Script Executed", "Script has executed with success", "Close")
+ loadstring(game:HttpGet("https://pastebin.com/raw/7hgJWL9R"))()
+    end)
+
+    Multi:Label("Join his discord: https://discord.gg/urs2cRBHXU")
+    Multi:Label("Script made by: 03.s#6260 ")
+    Multi:Label("Working Executors: All")
+
+
+	Multi:Label("This is a multigame script")
+	Multi:Label("Supported games:")
+	Multi:Label("[+] Online Business Simulator 2")
+	Multi:Label("[+] Star Simulator Beta")
+	Multi:Label("[+] Shoe Simulator")
+	Multi:Label("[+] Eating Simulator")
+	Multi:Label("[+] Super Power Fighting Simulator")
+	Multi:Label("[+] Fall of Hell")
+	Multi:Label("[+] Tower of hell")
+	Multi:Label("[+] Tower of mistery")
+	Multi:Label("[+] Ultimate Tower Defense")
+	Multi:Label("[+] Collect All Pets!")
+	Multi:Label("[+] Giant Survival")
+	Multi:Label("[+] Natural Disaster Survival")
+	Multi:Label("[+] Build A Boat For Treasure")
+	Multi:Label("[+] Legends Of Speed")
+	Multi:Label("[+] KAT")
+	Multi:Label("[+] Base Battles")
+	Multi:Label("[+] Clicker Madness")
+	Multi:Label("[+] Pet Adventure Simulator!")
+	Multi:Label("[+] Destruction Simulator")
+	Multi:Label("[+] Power Simulator 2")
+	Multi:Label("[+] Mall Tycoon")
+
+	Multi:Label("Enjoy The Script!!!")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 -- Inside GUI Stuff -- 
 Welcome:Button("Click this <3", function()
     DiscordLib:Notification("Thanks for using the script", "Hello and thx for using the script!", "Luv <3 you !!!")
@@ -7815,7 +7874,7 @@ end
        DiscordLib:Notification("Script Executed", "Script has executed with success", "Close")
        loadstring(game:HttpGet("https://raw.githubusercontent.com/TurfuGoldy/GoldenScripts/main/EzPets.lua"))()
     end)
-    EzPets:Label("Made by UNKNOWN")
+    EzPets:Label("Made by Goldy")
     EzPets:Label("Working Executors:")
     EzPets:Label("- Krnl")
     EzPets:Label("- Synapse")
