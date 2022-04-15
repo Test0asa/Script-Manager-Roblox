@@ -3,7 +3,7 @@
 
 
 
-
+-- loadingScreen
 loadstring(game:HttpGet("https://raw.githubusercontent.com/03koios/LoadingUiTest/main/LoadingUiTest"))()
 
 
@@ -11,7 +11,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/03koios/LoadingUiTest
 local DiscordLib = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/discord%20lib.txt")() -- Library
 
 -- GUI -- 
-local Main = DiscordLib:Window("Script Manager -- Current Version : 0.2")-- Windows :>> 
+local Main = DiscordLib:Window("Script Manager -- Current Version : 0.3")-- Windows :>> 
 local ServW = Main:Server("Welcome", "")
 local Welcome = ServW:Channel("Welcome!")
 local Ver = ServW:Channel("Update Logs")
@@ -100,7 +100,7 @@ Welcome:Button("Click this <3", function()
 
 
 
-
+    Ver:Label("( Ver 0.3 ): - Still Beta")
     Ver:Label("( Ver 0.2 ): - Beta")
     Ver:Label("( Ver 0.1 ): - Release!")
 
@@ -112,6 +112,7 @@ Welcome:Button("Click this <3", function()
     Games:Label(" - BloxFruits")
     Games:Label(" - UntitledHood")
 	Games:Label(" - BeeSwarmSim")
+	Games:Label(" - Arsenal")
     Games:Label(" - Soon more...")
 
     Welcome:Label("Make Sure you have the current version for the best quality")
@@ -7964,3 +7965,20 @@ loadstring(game:GetObjects("rbxassetid://4384103988")[0X1].Source)("Pepsi Swarm"
     Bees:Label("Script made by: PalestineArab")
 	Bees:Label("--------------------------------------------------------------------------------")
 	Bees:Label("Complex farming tool.It has all needs")
+
+
+
+
+
+local ph = Main:Server("PhantomForces", "")
+local phs = ph:Channel("ProjectEvo")
+
+phs:Button("Execute Script", function()
+DiscordLib:Notification("Script Executed", "Script has executed with success", "Close")
+loadstring(game:HttpGet("https://projectevo.xyz/script/loader.lua"))()
+    end)
+
+phs:Label("Made by ProjectEvo Development")
+phs:Label("-----------------------------------------------")
+phs:Label("Easy to use hack for phantom forces")
+    
