@@ -10,7 +10,7 @@
 local DiscordLib = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/discord%20lib.txt")() -- Library
 
 -- GUI -- 
-local Main = DiscordLib:Window("Script Manager -- Current Version : 0.3")-- Windows :>> 
+local Main = DiscordLib:Window("Script Manager -- Current Version : 0.4")-- Windows :>> 
 local ServW = Main:Server("Welcome", "")
 local Welcome = ServW:Channel("Welcome!")
 local Ver = ServW:Channel("Update Logs")
@@ -127,6 +127,7 @@ Welcome:Button("Click this <3", function()
 			loadstring(game:HttpGet("https://pastebin.com/raw/stggPUBM", true))()
 		end)
 		Extra:Label("Credits: V3rtices")
+		Extra:Label("Dont use chatlogger in da hood")
 
 
 		Extra:Button("Infinite Yeld", function()
@@ -145,7 +146,7 @@ Welcome:Button("Click this <3", function()
 
 
 
-
+	Ver:Label("( Ver 0.4 ): - Stable Beta")
     Ver:Label("( Ver 0.3 ): - Still Beta")
     Ver:Label("( Ver 0.2 ): - Beta")
     Ver:Label("( Ver 0.1 ): - Release!")
