@@ -7938,7 +7938,7 @@ end
     local ST = MultiScripts:Channel("Shiny Tools")
     ST:Button("Execute Script", function()
        DiscordLib:Notification("Script Executed", "Script has executed with success", "Close")
-       loadstring(game:HttpGet("https://raw.githubusercontent.com/XLinestX/ShinyToolV2/main/Login.lua"))()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/XLinestX/ShinyToolV2/main/Loader.lua"))()
     end)
     ST:Label("Made by sharmasrijan#7005 & Linest#9286")
 	ST:Label("[+] Pet Simulator X")
@@ -7946,7 +7946,7 @@ end
 	ST:Label("[+] Pet Legacy")
 	ST:Label("[+] Magnet Simulator 2")
 	ST:Label("[+] Donate me pls")
-
+	ST:Label("[+] Arsenal")
 
 
 
