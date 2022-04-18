@@ -10,18 +10,18 @@
 local DiscordLib = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/discord%20lib.txt")() -- Library
 
 -- GUI -- 
-local Main = DiscordLib:Window("Script Manager -- Current Version : 0.4")-- Windows :>> 
+local Main = DiscordLib:Window("Script Manager -- Current Version : 0.5")-- Windows :>> 
 local ServW = Main:Server("Welcome", "")
 local Welcome = ServW:Channel("Welcome!")
 local Ver = ServW:Channel("Update Logs")
 local Games = ServW:Channel("Games :>")
 local Extra = ServW:Channel("Extra stuff")
 local Executors = ServW:Channel("Executors")
+local Sites = ServW:Channel("Script Sites") 
 
-    
+
 
 local MultiScripts = Main:Server("MultiScripts", "")
-
 
 
 
@@ -67,6 +67,8 @@ Executors:Button("Krnl.ca", function()
 	DiscordLib:Notification("Copied", "The site link was successfully copied", "Done!")
 	setclipboard("https://krnl.ca/")("Clicked")  
 end)
+
+
 ---
 Executors:Button("JJSploit", function()
 	DiscordLib:Notification("Copied", "The site link was successfully copied", "Done")
@@ -92,6 +94,54 @@ Executors:Button("ScriptWare", function()
 	setclipboard("https://script-ware.com/")("Clicked")  
 end)
 ---
+
+
+local Fps = ServW:Channel("FpsUnlocker")
+Fps:Button("Fps Unlocker", function()
+	DiscordLib:Notification("The link was copied", "Paste this in your browser", "Done!")
+	setclipboard("https://github.com/axstin/rbxfpsunlocker/releases/tag/v4.4.2")("Clicked")  
+end)
+Fps:Button("Virus Total", function()
+	DiscordLib:Notification("Copied", "check the virustotal if you think is a virus", "Done!")
+	setclipboard("https://www.virustotal.com/gui/file/be8ab7938c03637d7fc03a765cc80821285544f7e659d7dd7aa1523f7727f1e6")("Clicked")  
+end)
+Fps:Label("Be aware of the fake positives")
+Fps:Label("---------------------------------------------------------")
+Fps:Label("Follow the steps:")
+Fps:Label("1.Paste the link in your browser")
+Fps:Label("2.Install the rbxfpsunlocker-x64.zip")
+Fps:Label("3.Open the .exe")
+Fps:Label("4.Enjoy")
+
+
+
+
+
+
+
+
+
+
+
+
+Sites:Button("Sakpot", function()
+	DiscordLib:Notification("Copied", "Site copied go check it out", "Done!")
+	setclipboard("https://sakpot.com/")("Clicked")  
+end)
+
+
+Sites:Button("1f02", function()
+	DiscordLib:Notification("Copied", "Site copied go check it out", "Done!")
+	setclipboard("https://1f02.net/")("Clicked")  
+end)
+
+Sites:Button("ScriptBlox", function()
+	DiscordLib:Notification("Copied", "Site copied go check it out", "Done!")
+	setclipboard("https://scriptblox.com/")("Clicked")  
+end)
+
+
+
 
 
 
@@ -126,8 +176,6 @@ Welcome:Button("Click this <3", function()
 			DiscordLib:Notification("Chat Logger", "Enjoy Spying on others", "Close")
 			loadstring(game:HttpGet("https://pastebin.com/raw/stggPUBM", true))()
 		end)
-		Extra:Label("Credits: V3rtices")
-		Extra:Label("Dont use chatlogger in da hood")
 
 
 		Extra:Button("Infinite Yeld", function()
@@ -135,7 +183,27 @@ Welcome:Button("Click this <3", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
 		end)
 
+
+		Extra:Button("FullBright", function()
+			DiscordLib:Notification("Blind Mode on", "Get ready to say bye bye to your eyes", "I've warned you")
+			
+		local Light = game:GetService("Lighting")
+
+		function dofullbright()
+		Light.Ambient = Color3.new(1, 1, 1)
+		Light.ColorShift_Bottom = Color3.new(1, 1, 1)
+		Light.ColorShift_Top = Color3.new(1, 1, 1)
+		end
 		
+		dofullbright()
+		
+		Light.LightingChanged:Connect(dofullbright)
+
+		end)
+
+		Extra:Label("Issues:")
+		Extra:Label("+-----------------------------------------+")
+		Extra:Label("1. Dont use chatlogger in da hood and phantom forces")
 
 
 
@@ -145,7 +213,7 @@ Welcome:Button("Click this <3", function()
 
 
 
-
+    Ver:Label("( Ver 0.5 ): - First release verison")
 	Ver:Label("( Ver 0.4 ): - Stable Beta")
     Ver:Label("( Ver 0.3 ): - Still Beta")
     Ver:Label("( Ver 0.2 ): - Beta")
@@ -161,6 +229,7 @@ Welcome:Button("Click this <3", function()
 	Games:Label(" - BeeSwarmSim")
 	Games:Label(" - Arsenal")
 	Games:Label(" - Phantom Forces")
+	Games:Label(" - Criminality")
     Games:Label(" - Soon more...")
 
     Welcome:Label("Make Sure you have the current version for the best quality")
@@ -7951,7 +8020,7 @@ end
 
 
 	local BF = Main:Server("BloxFruit", "")
-	local Bfs = BF:Channel("MUROKO")
+	local Bfs = BF:Channel("Blox fruit script")
     Bfs:Button("Execute Script", function()
        DiscordLib:Notification("Script Executed", "Script has executed with success", "Close")
        loadstring(game:HttpGet('https://raw.githubusercontent.com/SHAREHACK/script/main/renhuball'))()
@@ -7961,19 +8030,19 @@ end
 	Bfs:Label("Farming script. Also one of the best")
 
 
-
-
-
-
-	local unth = Main:Server("UntitledHood", "")
-	local Uh = unth:Channel("Untitled hood cash")
-    Uh:Button("Execute Script", function()
+	
+	
+	local muroko = BF:Channel("Muroko")
+   muroko:Button("Execute Script", function()
        DiscordLib:Notification("Script Executed", "Script has executed with success", "Close")
-	   loadstring(game:HttpGet("https://raw.githubusercontent.com/xlostpexz/Untitled-Hood-Free/main/Untitled%20Hood%20Free"))()
+       loadstring(game:HttpGet('loadstring(game:HttpGet("https://raw.githubusercontent.com/xDepressionx/Free-Script/main/BloxFruit.lua"))()'))()
     end)
-    Uh:Label("Made by UNKNOWN")
-	Uh:Label("----------------------------------------------------------------------------")
-	Uh:Label("999t Money Script")
+    muroko:Label("Made by UNKNOWN")
+	muroko:Label("-------------------------------------------------------------------------")
+	muroko:Label("Probably the best script")
+
+
+
 	
 
 local AR = Main:Server("Arsenal", "")
@@ -8028,4 +8097,15 @@ loadstring(game:HttpGet("https://projectevo.xyz/script/loader.lua"))()
 phs:Label("Made by ProjectEvo Development")
 phs:Label("-----------------------------------------------")
 phs:Label("Easy to use hack for phantom forces")
-    
+
+
+local cr = Main:Server("Criminality", "")
+local crs = cr:Channel("Criminality script")
+crs:Button("Execute Script", function()
+	DiscordLib:Notification("Script Executed", "Script has executed with success", "Close")
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/OutliersHub/OutliersHub/main/Loader", true))()
+		end)
+
+		crs:Label("Made by UNKNOWN")
+		crs:Label("-----------------------------------------------")
+		crs:Label("Usefull tool for criminality has a lot of features")
